@@ -1,6 +1,6 @@
 {
   "name": "generator-ng1-generate",
-  "version": "0.4.1",
+  "version": "1.0.0",
   "description": "Yeoman generator for ng1-generate Angular",
   "license": "MIT",
   "main": "app/index.js",
