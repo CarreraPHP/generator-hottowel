@@ -1,10 +1,11 @@
-# generator-hottowel
+# generator-ng1-generate
 
-[![NPM version](https://img.shields.io/npm/v/generator-hottowel.svg?style=flat)](https://www.npmjs.com/package/generator-hottowel)
-[![Build Status](https://secure.travis-ci.org/johnpapa/generator-hottowel.png?branch=master)](https://travis-ci.org/johnpapa/generator-hottowel)
+[![NPM version](https://img.shields.io/npm/v/generator-ng1-generate.svg?style=flat)](https://www.npmjs.com/package/generator-ng1-generate)
+[![Build Status](https://secure.travis-ci.org/johnpapa/generator-ng1-generate.png?branch=master)](https://travis-ci.org/johnpapa/generator-ng1-generate)
 
-Create an Angular application using the HotTowel style (via a [Yeoman](http://yeoman.io) generator)
+Create an Angular application using the ng1-generate style (via a [Yeoman](http://yeoman.io) generator)
 
+>*Fork of [HotTowel](https://github.com/johnpapa/generator-hottowel) with sub generators available similar to [angular-cli](https://github.com/angular/angular-cli)
 >*Opinionated Angular style guide for teams by [@john_papa](//twitter.com/john_papa)*
 
 >More details about the styles and patterns used in this app can be found in my [Angular Style Guide](https://github.com/johnpapa/angularjs-styleguide) and my [Angular Patterns: Clean Code](http://jpapa.me/ngclean) course at [Pluralsight](http://pluralsight.com/training/Authors/Details/john-papa) and working in teams.
@@ -27,9 +28,9 @@ Create an Angular application using the HotTowel style (via a [Yeoman](http://ye
 
 ## QuickStart
 
-1. Install generator-hottowel
+1. Install generator-ng1-generate
     ```bash
-    npm install -g generator-hottowel
+    npm install -g generator-ng1-generate
     ```
 
 2. Create a new folder and change directory to it
@@ -40,19 +41,19 @@ Create an Angular application using the HotTowel style (via a [Yeoman](http://ye
 
 3. Run the generator
     ```bash
-    yo hottowel helloWorld
+    yo ng1-generate helloWorld
     ```
 
-## HotTowel Options
+## ng1-generate Options
 
 ### Application Name
  - Pass in the app's name to avoid being prompted for it
 
     ```bash
-    yo hottowel [appName]
+    yo ng1-generate [appName]
     ```
 
-## Running HotTowel
+## Running ng1-generate
 
 ### Linting
  - Run code analysis using `gulp vet`. This runs jshint, jscs, and plato.
@@ -72,8 +73,8 @@ Create an Angular application using the HotTowel style (via a [Yeoman](http://ye
 ### Running the optimized code
  - Run the optimize project from the build folder with `gulp serve-build`
 
-## Exploring HotTowel
-HotTowel Angular starter project
+## Exploring ng1-generate
+ng1-generate Angular starter project
 
 ### Structure
 The structure also contains a gulpfile.js and a server folder. The server is there just so we can serve the app using node. Feel free to use any server you wish.
