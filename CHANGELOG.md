@@ -1,4 +1,4 @@
-#generator-hottowel
+#generator-ng1-generate
 
 ## 0.4.0 - Wuttus-tookusuous-solongous
 
