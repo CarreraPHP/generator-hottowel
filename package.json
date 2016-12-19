@@ -39,6 +39,7 @@
     "gulp-bump": "^2.1.0",
     "gulp-load-plugins": "^1.2.0",
     "gulp-task-listing": "^1.0.1",
-    "gulp-util": "^3.0.7"
+    "gulp-util": "^3.0.7",
+    "mocha": "^3.2.0"
   }
 }

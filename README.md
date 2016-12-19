@@ -1,7 +1,7 @@
 # generator-ng1-generate
 
 [![NPM version](https://img.shields.io/npm/v/generator-ng1-generate.svg?style=flat)](https://www.npmjs.com/package/generator-ng1-generate)
-[![Build Status](https://secure.travis-ci.org/johnpapa/generator-ng1-generate.png?branch=master)](https://travis-ci.org/johnpapa/generator-ng1-generate)
+[![Build Status](https://travis-ci.org/CarreraPHP/generator-hottowel.svg?branch=ng1-generate)](https://travis-ci.org/CarreraPHP/generator-hottowel)
 
 Create an Angular application using the ng1-generate style (via a [Yeoman](http://yeoman.io) generator)
 
