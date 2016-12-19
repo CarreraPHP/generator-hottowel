@@ -5,6 +5,8 @@
 
 Create an Angular application using the ng1-generate style (via a [Yeoman](http://yeoman.io) generator)
 
+>*Work in Progress
+
 >*Fork of [HotTowel](https://github.com/johnpapa/generator-hottowel) with sub generators available similar to [angular-cli](https://github.com/angular/angular-cli)*
 
 >*Opinionated Angular style guide for teams by [@john_papa](//twitter.com/john_papa)*
