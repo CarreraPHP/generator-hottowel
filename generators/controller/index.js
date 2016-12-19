@@ -15,8 +15,10 @@ var ControllerGenerator = yeoman.Base.extend({
         yeoman.Base.apply(this, arguments);
 
         this.argument('ctrlName', { type: String, required: true });
-        this.argument('packageJson', { type: String, required: false })
+        this.argument('makeDir', { type: Boolean, required: false });
+        this.argument('packageJson', { type: String, required: false });
         this.ctrlName = _.camelize(_.slugify(_.humanize(this.ctrlName)));
+        this.makeDir = !!this.makeDir;
     },
 
     prompting: function () {
@@ -64,14 +66,19 @@ var ControllerGenerator = yeoman.Base.extend({
 
     componentFiles: function() {
         this.log("This will be running at last by default.....");
+
+        this.fs.copyTpl(this.templatePath('_.controller.js'), this.destinationPath((this.makeDir ? this.ctrlName + '/' : '') + this.ctrlName + '.controller.js'), {
+            ctrlName: this.ctrlName,
+            moduleName: this.moduleName || 'app'
+        });
     },
 
     paths: function() {
-        this.log(this.destinationPath('index.js'));
-        this.log(this.destinationRoot());
+        // this.log(this.destinationPath('index.js'));
+        // this.log(this.destinationRoot());
 
-        this.log(this.templatePath('index.js'));
-        this.log(this.sourceRoot());
+        // this.log(this.templatePath('index.js'));
+        // this.log(this.sourceRoot());
     }
 
 });

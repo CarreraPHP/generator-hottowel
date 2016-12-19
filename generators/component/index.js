@@ -22,7 +22,7 @@ var ComponentGenerator = yeoman.Base.extend({
         this.compName = _.camelize(_.slugify(_.humanize(this.compName)));
 
         this.composeWith('ng1-generate:controller', {
-            args: [this.compName],
+            args: [this.compName, 'true'],
             // arguments: [this.compName]
         });
     },
@@ -78,7 +78,7 @@ var ComponentGenerator = yeoman.Base.extend({
     componentFiles: function() {
         this.log("This will be running at last by default.....");
 
-        this.fs.copyTpl(this.templatePath('_.component.js'), this.destinationPath(this.compName + '.component.js'), {
+        this.fs.copyTpl(this.templatePath('_.component.js'), this.destinationPath(this.compName + '/' + this.compName + '.component.js'), {
             compName: this.compName,
             moduleName: this.moduleName || 'app'
         });
