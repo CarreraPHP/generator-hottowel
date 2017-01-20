@@ -10,8 +10,11 @@ var os = require('os');
 
 describe('ng1-generate:app', function () {
   before(function (done) {
-    helpers.run(path.join(__dirname, '../generators/app'))
-      .withArguments(['sampleproject1']) 
+    helpers
+      .run(path.join(__dirname, '../generators/app', {
+        tmpdir: true
+      }))
+      .withArguments(['sampleproject1'])
       .inDir(path.join(os.tmpdir(), './temp-test'))
       .withOptions({ 'skip-install': true })
       // .withPrompts({})
