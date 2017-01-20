@@ -13,9 +13,6 @@ describe('ng1-generate:app', function () {
     helpers.run(path.join(__dirname, '../generators/app'))
       .inDir(path.join(os.tmpdir(), './temp-test'))
       .withOptions({ 'skip-install': true })
-      .withPrompt({
-        someOption: true
-      })
       .on('end', done);
   });
 
