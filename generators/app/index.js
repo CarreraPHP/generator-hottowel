@@ -95,6 +95,13 @@ var HotTowelGenerator = yeoman.Base.extend({
     this.copy('gitignore', '.gitignore');
   },
 
+  install: function () {
+    this.installDependencies({
+      skipMessage: this.options['skip-install-message'],
+      skipInstall: this.options['skip-install']
+    });
+  },
+
   runNpm: function() {
     //        var done = this.async();
     //        this.npmInstall('', function () {
